@@ -97,11 +97,7 @@ const Navbar = () => {
                 Projects
               </Link>
             </li>
-            <li className="hover:text-green-400">
-              <Link to="/experience" onClick={closeMobileMenu}>
-                Experince
-              </Link>
-            </li>
+
             <li className="hover:text-green-400">
               <Link to="/contact" onClick={closeMobileMenu}>
                 Contact
