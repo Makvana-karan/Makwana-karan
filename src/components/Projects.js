@@ -4,6 +4,7 @@ import ecomm from "../assets/e-comm .png";
 import pinterest from "../assets/Pinterest .png";
 import weather from "../assets/weather.png";
 import student from "../assets/Student.png";
+import mk from "../assets/mk.png";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { animateOut, animatePageIn } from "../animation";
@@ -30,7 +31,7 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
         <a href="#">
           <img
             className="w-full rounded-t-lg h-auto object-cover "
-            src={ecomm}
+            src={mk}
             alt=""
           />
         </a>
@@ -56,11 +57,11 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
         </a>
       )}
 
-      {title === "Weather App" && (
+      {title === "MK-store" && (
         <a href="#">
           <img
             className="w-full rounded-t-lg h-auto object-cover "
-            src={weather}
+            src={ecomm}
             alt=""
           />
         </a>
@@ -141,9 +142,16 @@ export const project = [
     title: "E-commerce Website",
     description:
       "Develop a robust and scalable e-commerce website using the MERN (MongoDB, Express.js, React, Node.js) stack, providing a seamless shopping experience with efficient product management, secure user authentication, and smooth payment processing..",
-    image: { ecomm },
-    git: "https://github.com/Makvana-karan/MK-Ecommerce",
-    technologies: ["MongoDb", "ReactJS", "NodeJS", "ExpressJS", "Tailwind"],
+    image: { mk },
+    git: "https://github.com/Makvana-karan/MK-STORE",
+    technologies: [
+      "MongoDb",
+      "NextJS",
+      "ReactJS",
+      "NodeJS",
+      "ExpressJS",
+      "StyledComponent",
+    ],
   },
   {
     title: "Admin Dashboard",
@@ -170,20 +178,20 @@ export const project = [
     technologies: ["React JS", "tailwind CSS", "Next JS", "Firebase"],
   },
   {
+    title: "MK-store",
+    description:
+      "Develop a visually appealing and responsive weather application using React and Tailwind CSS, with real-time weather data fetched from a weather API. The application will provide users with current weather conditions, forecasts, and other relevant weather information for their chosen locations..",
+    image: { ecomm },
+    git: "https://github.com/Makvana-karan/MK-Ecommerce",
+    technologies: ["MongoDb", "ReactJS", "NodeJS", "ExpressJS", "Tailwind"],
+  },
+  {
     title: "Attendance_System",
     description:
       "Develop a robust and user-friendly attendance management system using PHP Laravel. The system will allow administrators to manage attendance records efficiently, and users to check their attendance status in real-time..",
     image: { student },
     git: "https://github.com/Makvana-karan/Student_Attendance_System",
     technologies: ["PHP", "Laravel", "Bootstrap", "Mysql"],
-  },
-  {
-    title: "Weather App",
-    description:
-      "Develop a visually appealing and responsive weather application using React and Tailwind CSS, with real-time weather data fetched from a weather API. The application will provide users with current weather conditions, forecasts, and other relevant weather information for their chosen locations..",
-    image: { weather },
-    git: "https://github.com/Makvana-karan/WeatherApp",
-    technologies: ["React JS", "tailwind CSS", "API"],
   },
 ];
 
