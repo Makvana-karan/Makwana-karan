@@ -67,6 +67,16 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
         </a>
       )}
 
+      {title === "Weather App" && (
+        <a href="#">
+          <img
+            className="w-full rounded-t-lg h-auto object-cover "
+            src={weather}
+            alt=""
+          />
+        </a>
+      )}
+
       {title === "Attendance_System" && (
         <a href="#">
           <img
@@ -185,6 +195,16 @@ export const project = [
     git: "https://github.com/Makvana-karan/MK-Ecommerce",
     technologies: ["MongoDb", "ReactJS", "NodeJS", "ExpressJS", "Tailwind"],
   },
+
+  {
+    title: "Weather App",
+    description:
+      "Develop a visually appealing and responsive weather application using React and Tailwind CSS, with real-time weather data fetched from a weather API. The application will provide users with current weather conditions, forecasts, and other relevant weather information for their chosen locations..",
+    image: { weather },
+    git: "https://github.com/Makvana-karan/WeatherApp",
+    technologies: ["React JS", "tailwind CSS", "API"],
+  },
+
   {
     title: "Attendance_System",
     description:
