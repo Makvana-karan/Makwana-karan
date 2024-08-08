@@ -16,13 +16,10 @@ import tailwindcss from "./svg/icons8-tailwind-css.svg";
 import bootstrap from "./svg/icons8-bootstrap.svg";
 import typescript from "./svg/icons8-typescript.svg";
 import git from "./svg/git.svg";
-import firebase from "./svg/firebase-svgrepo-com.svg";
 import mysql from "./svg/mysql.svg";
 import redux from "./svg/redux-svgrepo-com.svg";
-import postman from "./svg/postman-icon-svgrepo-com.svg";
 import prisma from "./svg/prisma-svgrepo-com.svg";
 import net from "./svg/dotnet-svgrepo-com.svg";
-import csharp from "./svg/csharp-svgrepo-com.svg";
 import sql from "./svg/icons8-microsoft-sql-server.svg";
 import netcore from "./svg/dotnet-svgrepo-com (1).svg";
 import Footer from "./Footer";
@@ -154,10 +151,6 @@ const About = () => {
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={csharp} alt="img" />
-                    </li>
-
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
                       <img src={netcore} alt="img" />
                     </li>
 
@@ -182,19 +175,11 @@ const About = () => {
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={firebase} alt="img" />
-                    </li>
-
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
                       <img src={prisma} alt="img" />
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
                       <img src={git} alt="img" />
-                    </li>
-
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={postman} alt="img" />
                     </li>
                   </div>
                 </div>
