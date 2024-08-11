@@ -3,13 +3,11 @@ import "../App.css";
 import ButtonLink from "./ButtonLink";
 import { motion } from "framer-motion";
 import { animatePageIn } from "../animation";
-import laravel from "./svg/laravel-svgrepo-com.svg";
 import css from "./svg/css.svg";
 import html from "./svg/html.svg";
 import javascript from "./svg/js.svg";
 import react from "./svg/react.svg";
 import nodejs from "./svg/nodejs.svg";
-import php from "./svg/php3-svgrepo-com.svg";
 import mongodb from "./svg/mongodb.svg";
 import nextjs from "./svg/next-js-svgrepo-com.svg";
 import tailwindcss from "./svg/icons8-tailwind-css.svg";
@@ -19,9 +17,7 @@ import git from "./svg/git.svg";
 import mysql from "./svg/mysql.svg";
 import redux from "./svg/redux-svgrepo-com.svg";
 import prisma from "./svg/prisma-svgrepo-com.svg";
-import net from "./svg/dotnet-svgrepo-com.svg";
 import sql from "./svg/icons8-microsoft-sql-server.svg";
-import netcore from "./svg/dotnet-svgrepo-com (1).svg";
 import Footer from "./Footer";
 
 const About = () => {
@@ -66,7 +62,7 @@ const About = () => {
               </a>{" "}
               I specialize in the{" "}
               <span className="text-2xl font-semibold text-green-500">
-                MERN STACK and have also learned PHP and .NET.
+                MERN STACK.
               </span>
               🚀.
               <br />
@@ -75,7 +71,7 @@ const About = () => {
             </motion.p>
 
             <ButtonLink
-              url="https://drive.google.com/file/d/1EvU5Kqkr7-x_4ramGteS_O7jQkoAO6ns/view?usp=drivesdk"
+              url="https://drive.google.com/file/d/18sxpZQH6g39l5V7wMtp0iyMBNl5CaU2-/view?usp=drive_link"
               text="View Resume →"
               padding={`p-3`}
             />
@@ -142,22 +138,6 @@ const About = () => {
                   </div>
 
                   <div className="flex gap-6 mt-3 flex-wrap">
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={php} alt="img" />
-                    </li>
-
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={laravel} alt="img" />
-                    </li>
-
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={netcore} alt="img" />
-                    </li>
-
-                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={net} alt="img" />
-                    </li>
-
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
                       <img src={nodejs} alt="img" />
                     </li>

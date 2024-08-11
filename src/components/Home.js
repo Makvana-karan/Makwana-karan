@@ -59,12 +59,9 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "A .NET Developer",
+                "A FULL STACK Developer",
                 1000,
                 "A MERN Developer",
-                1000,
-
-                "A PHP Developer",
                 1000,
               ]}
               speed={50}

@@ -1,6 +1,6 @@
 export const name = "Karan";
 
-export const skill = ["MERN", ",", "PHP", "&", ".NET"];
+export const skill = ["MERN", ",", ".NET"];
 
 export const experiences = [
   {
