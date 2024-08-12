@@ -10,6 +10,7 @@ import react from "./svg/react.svg";
 import nodejs from "./svg/nodejs.svg";
 import mongodb from "./svg/mongodb.svg";
 import nextjs from "./svg/next-js-svgrepo-com.svg";
+import express from "./svg/icons8-express-js.svg";
 import tailwindcss from "./svg/icons8-tailwind-css.svg";
 import bootstrap from "./svg/icons8-bootstrap.svg";
 import typescript from "./svg/icons8-typescript.svg";
@@ -140,6 +141,10 @@ const About = () => {
                   <div className="flex gap-6 mt-3 flex-wrap">
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
                       <img src={nodejs} alt="img" />
+                    </li>
+
+                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
+                      <img src={express} alt="img" />
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
