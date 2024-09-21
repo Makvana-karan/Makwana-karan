@@ -72,7 +72,7 @@ const About = () => {
             </motion.p>
 
             <ButtonLink
-              url="https://drive.google.com/file/d/18sxpZQH6g39l5V7wMtp0iyMBNl5CaU2-/view?usp=drive_link"
+              url="https://drive.google.com/file/d/1WkXECuZPYWNMCxOebsniE1FRLjEFF9-Q/view?usp=drivesdk"
               text="View Resume →"
               padding={`p-3`}
             />

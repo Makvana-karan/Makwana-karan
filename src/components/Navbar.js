@@ -53,6 +53,13 @@ const Navbar = () => {
           </Link>
 
           <Link
+            to="/experience"
+            className="link transition ease-in-out duration-300 hover:text-green-400 hover:border-green-400 hover:border-b-2 "
+          >
+            Experience
+          </Link>
+
+          <Link
             to="/contact"
             className="link transition ease-in-out duration-300 hover:text-green-400 hover:border-green-400 hover:border-b-2 "
           >
@@ -95,6 +102,12 @@ const Navbar = () => {
             <li className="hover:text-green-400">
               <Link to="/projects" onClick={closeMobileMenu}>
                 Projects
+              </Link>
+            </li>
+
+            <li className="hover:text-green-400">
+              <Link to="/experience" onClick={closeMobileMenu}>
+                Experience
               </Link>
             </li>
 
