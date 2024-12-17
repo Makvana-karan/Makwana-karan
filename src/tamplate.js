@@ -1,6 +1,7 @@
+/// this js file for Animation
+
 import { useEffect } from "react";
 import { animatePageIn } from "./animation";
-import { useLocation } from "react-router-dom";
 
 export default function Template({ children }) {
   useEffect(() => {
