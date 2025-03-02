@@ -15,12 +15,12 @@ const Experience = () => {
   }, []);
 
   return (
-    <div style={{ height: "" }} className="h-64">
+    <div className="h-64">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="experience bg-black text-white pt-4 pt-16 mt-3  h-[80%]"
+        className="experience bg-black text-white pt-16 mt-3  h-[80%]"
         style={{ height: "100%" }}
         id="experience"
       >
@@ -78,6 +78,7 @@ const Experience = () => {
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
+
         <Footer />
       </motion.div>
     </div>

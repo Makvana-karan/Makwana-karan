@@ -4,6 +4,7 @@ import ecomm from "../assets/e-comm .png";
 import pinterest from "../assets/Pinterest .png";
 import weather from "../assets/weather.png";
 import student from "../assets/Student.png";
+import redweek from "../assets/redweek.png";
 import mk from "../assets/mk.png";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
@@ -32,6 +33,15 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
           <img
             className="w-full rounded-t-lg h-auto object-cover "
             src={mk}
+            alt=""
+          />
+        </a>
+      )}
+      {title === "Redweek" && (
+        <a href="#">
+          <img
+            className="w-full rounded-t-lg h-auto object-cover "
+            src={redweek}
             alt=""
           />
         </a>
@@ -160,17 +170,28 @@ export const project = [
       "ReactJS",
       "NodeJS",
       "ExpressJS",
+      "Stripe",
+      "Tailwind CSS",
       "StyledComponent",
     ],
   },
+
   {
-    title: "Admin Dashboard",
+    title: "Redweek",
     description:
-      "Develop a powerful and intuitive admin dashboard for managing an e-commerce platform using the MERN (MongoDB, Express.js, React, Node.js) stack, with Next.js for server-side rendering and enhanced performance..",
-    image: { dashboard },
-    git: "https://github.com/Makvana-karan/E-commerce-Dashboard",
-    technologies: ["React JS", "tailwind CSS", "Next JS"],
+      "RedWeek is a modern, full-stack vacation rental booking platform built with Next.js, Node.js, and MongoDB. It enables users to explore, list, and book weekly rental properties while offering a seamless and secure payment experience through Stripe integration.",
+    image: { redweek },
+    git: "https://github.com/Makvana-karan/Redweek",
+    technologies: [
+      "MongoDb",
+      "NextJS",
+      "ReactJS",
+      "NodeJS",
+      "ExpressJS",
+      "Stripe",
+    ],
   },
+
   {
     title: "Book Store",
     description:
@@ -204,7 +225,14 @@ export const project = [
     git: "https://github.com/Makvana-karan/WeatherApp",
     technologies: ["React JS", "tailwind CSS", "API"],
   },
-
+  {
+    title: "Admin Dashboard",
+    description:
+      "Develop a powerful and intuitive admin dashboard for managing an e-commerce platform using the MERN (MongoDB, Express.js, React, Node.js) stack, with Next.js for server-side rendering and enhanced performance..",
+    image: { dashboard },
+    git: "https://github.com/Makvana-karan/E-commerce-Dashboard",
+    technologies: ["React JS", "tailwind CSS", "Next JS"],
+  },
   {
     title: "Attendance_System",
     description:

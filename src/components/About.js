@@ -14,11 +14,12 @@ import express from "./svg/icons8-express-js.svg";
 import tailwindcss from "./svg/icons8-tailwind-css.svg";
 import bootstrap from "./svg/icons8-bootstrap.svg";
 import typescript from "./svg/icons8-typescript.svg";
-import git from "./svg/git.svg";
+import docker from "./svg/icons8-docker.svg";
 import mysql from "./svg/mysql.svg";
 import redux from "./svg/redux-svgrepo-com.svg";
-import prisma from "./svg/prisma-svgrepo-com.svg";
-import sql from "./svg/icons8-microsoft-sql-server.svg";
+import graphql from "./svg/graphql-svgrepo-com.svg";
+import aws from "./svg/icons8-aws.svg";
+import firebase from "./svg/firebase-svgrepo-com.svg";
 import Footer from "./Footer";
 
 const About = () => {
@@ -72,7 +73,7 @@ const About = () => {
             </motion.p>
 
             <ButtonLink
-              url="https://drive.google.com/file/d/1p3ZE1x-LzxlLexG87HEMUz_ngB283U8j/view?usp=drivesdk"
+              url="https://drive.google.com/file/d/1TnMSfjYRJJlu6SrakuXtvokBesA0Lbli/view?usp=drive_link"
               text="View Resume →"
               padding={`p-3`}
             />
@@ -156,15 +157,18 @@ const About = () => {
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={sql} alt="img" />
+                      <img src={firebase} alt="img" />
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={prisma} alt="img" />
+                      <img src={docker} alt="img" />
                     </li>
 
                     <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
-                      <img src={git} alt="img" />
+                      <img src={graphql} alt="img" />
+                    </li>
+                    <li className="list-none mt-2 transition ease-in-out duration-300 hover:scale-110 cursor-pointer hover:-translate-y-1">
+                      <img src={aws} alt="img" />
                     </li>
                   </div>
                 </div>

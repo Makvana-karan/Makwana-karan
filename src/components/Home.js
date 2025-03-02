@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { name } from "../constants";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { skill } from "../constants";
+// import { skill } from "../constants";
 import Footer from "./Footer";
 import { animatePageIn } from "../animation";
 
@@ -46,7 +46,7 @@ const Home = () => {
         className="hero relative h-[calc(100vh)] flex justify-center items-center text-white"
         id="hero"
       >
-        <div className="pt-4 h-36 backdrop-blur-sm rounded-3xl">
+        <div className="pt-4 h-36 backdrop-blur-sm rounded-3xl sm:w-[35%]">
           <h1 className="text-2xl font-extrabold mt-2 sm:text-7xl">
             Hi, I'm&nbsp;
             <span className="text-yellow-200 font-extrabold">{text}</span>
@@ -55,13 +55,13 @@ const Home = () => {
             initial={{ opacity: 0, x: "-100vw" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 3 }}
-            className="text-4xl sm:text-4xl font-extrabold mt-3  bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500"
+            className="text-xl sm:text-4xl font-extrabold mt-3  bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500"
           >
             <TypeAnimation
               sequence={[
-                "A FULL STACK Developer",
+                "A Software Developer (SDE)",
                 1000,
-                "A MERN Developer",
+                "A Full Stack Developer",
                 1000,
               ]}
               speed={50}
