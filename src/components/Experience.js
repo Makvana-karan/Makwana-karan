@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { experiences } from "../constants";
-import { animatePageIn } from "../animation";
-import { motion } from "framer-motion";
-import Footer from "./Footer";
+import React, { useEffect } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { experiences } from '../constants';
+import { animatePageIn } from '../animation';
+import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 const Experience = () => {
   useEffect(() => {
@@ -21,10 +18,10 @@ const Experience = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
         className="experience bg-black text-white pt-16 mt-3  h-[80%]"
-        style={{ height: "100%" }}
+        style={{ height: '100%' }}
         id="experience"
       >
-        <div className="pt-12 sm:px-16" style={{ height: "100%" }}>
+        <div className="pt-12 sm:px-16" style={{ height: '100%' }}>
           <p className="font-light">MY JOURNEY SO FAR.</p>
           <h2 className="text-4xl sm:text-5xl font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-500">
             Work Experience.
@@ -34,11 +31,11 @@ const Experience = () => {
           {experiences.map((experience) => (
             <VerticalTimelineElement
               className="relative vertical-timeline-element--work"
-              contentStyle={{ background: "#1d1836", color: "#fff" }}
+              contentStyle={{ background: '#1d1836', color: '#fff' }}
               scale={{ delay: 3, duration: 5 }}
-              contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+              contentArrowStyle={{ borderRight: '7px solid  #232631' }}
               date={experience.duration}
-              iconStyle={{ background: "#fff" }}
+              iconStyle={{ background: '#fff' }}
               icon={
                 <motion.a
                   className="flex justify-center items-center w-full h-full"
@@ -54,13 +51,8 @@ const Experience = () => {
               }
             >
               <div>
-                <h3 className="text-white text-[24px] font-bold">
-                  {experience.role}
-                </h3>
-                <p
-                  className="text-secondary text-[16px] font-semibold"
-                  style={{ margin: 0 }}
-                >
+                <h3 className="text-white text-[24px] font-bold">{experience.role}</h3>
+                <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
                   {experience.company}
                 </p>
               </div>

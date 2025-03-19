@@ -1,15 +1,15 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
-import { name } from "../constants";
-import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import React from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { name } from '../constants';
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 // import { skill } from "../constants";
-import Footer from "./Footer";
-import { animatePageIn } from "../animation";
+import Footer from './Footer';
+import { animatePageIn } from '../animation';
 
 const Home = () => {
   const ref = useRef(0);
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,25 +52,20 @@ const Home = () => {
             <span className="text-yellow-200 font-extrabold">{text}</span>
           </h1>
           <motion.h2
-            initial={{ opacity: 0, x: "-100vw" }}
+            initial={{ opacity: 0, x: '-100vw' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 3 }}
             className="text-xl sm:text-4xl font-extrabold mt-3  bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500"
           >
             <TypeAnimation
-              sequence={[
-                "A Software Developer (SDE)",
-                1000,
-                "A Full Stack Developer",
-                1000,
-              ]}
+              sequence={['A MERN STACK DEVELOPER', 1000, 'A Full Stack Developer', 1000]}
               speed={50}
-              style={{ fontSize: "1em" }}
+              style={{ fontSize: '1em' }}
               repeat={Infinity}
             />
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0, x: "100vw" }}
+            initial={{ opacity: 0, x: '100vw' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 3 }}
             className="mt-3 text-xl"
